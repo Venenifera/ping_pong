@@ -1,7 +1,8 @@
 from pygame import *
 window = display.set_mode((600, 500))
 display.set_caption("ping_pong")
-
+clock = time.Clock()
+window.fill((100,25,100))
 class GameSprite(sprite.Sprite):
     def __init__(self, player_image, player_x, player_y, player_speed, player_size):
         super().__init__()
